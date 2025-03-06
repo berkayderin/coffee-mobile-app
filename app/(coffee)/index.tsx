@@ -75,15 +75,6 @@ const AppScreen = () => {
 					className="z-10 px-8 pb-16 gap-5"
 					style={{ opacity: fadeAnim }}
 				>
-					<Link href="/explore" asChild>
-						<Pressable className="bg-amber-500 rounded-full py-5 shadow-xl flex-row justify-center items-center">
-							<Text className="text-white font-bold text-base text-center tracking-wide mr-2">
-								KEŞFET
-							</Text>
-							<Feather name="arrow-right" size={18} color="white" />
-						</Pressable>
-					</Link>
-
 					<View className="flex-row gap-4">
 						<Link href="/menu" asChild>
 							<Pressable className="bg-white/10 backdrop-blur-md flex-1 rounded-2xl py-5 shadow-lg border border-white/20">
