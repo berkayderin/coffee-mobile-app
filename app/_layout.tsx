@@ -37,9 +37,22 @@ export default function RootLayout() {
 			value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}
 		>
 			<Stack>
-				<Stack.Screen
+				{/* <Stack.Screen
 					name="(tabs)"
 					options={{ headerShown: false }}
+				/> */}
+				<Stack.Screen
+					name="index"
+					options={{
+						title: 'Ana Sayfa',
+						headerShown: false
+					}}
+				/>
+				<Stack.Screen
+					name="contact"
+					options={{
+						title: 'İletişim'
+					}}
 				/>
 				<Stack.Screen name="+not-found" />
 			</Stack>
