@@ -131,7 +131,7 @@ const AppScreen = () => {
 					}}
 				>
 					<View className="flex-row gap-5">
-						<Link href="/menu" asChild>
+						<Link href="/coffee" asChild>
 							<Pressable className="bg-white/5 backdrop-blur-md flex-1 rounded-3xl py-6 shadow-lg border border-white/10 overflow-hidden">
 								<BlurView
 									intensity={20}

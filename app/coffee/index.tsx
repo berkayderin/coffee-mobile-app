@@ -288,7 +288,7 @@ const MenuScreen = () => {
 									<Pressable
 										className="bg-[#A06235] py-2.5 px-5 rounded-xl flex-row items-center space-x-2"
 										onPress={() => {
-											router.push(`/${item.id}`)
+											router.push(`/coffee/details/${item.id}`)
 										}}
 									>
 										<Text className="text-white font-semibold">
