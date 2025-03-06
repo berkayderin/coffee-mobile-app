@@ -10,7 +10,7 @@ import icedCoffeeImg from '@/assets/images/iced-coffee.png'
 import { Link } from 'expo-router'
 import { LinearGradient } from 'expo-linear-gradient'
 
-const app = () => {
+const AppScreen = () => {
 	return (
 		<View className="flex-1 bg-[#121212]">
 			<StatusBar barStyle="light-content" />
@@ -52,6 +52,13 @@ const app = () => {
 							</Text>
 						</Pressable>
 					</Link>
+					<Link href="/menu" asChild>
+						<Pressable className="bg-amber-500 rounded-full py-4 shadow-lg">
+							<Text className="text-white font-bold text-base text-center tracking-wide">
+								MENÜ
+							</Text>
+						</Pressable>
+					</Link>
 					<Link href="/contact" asChild>
 						<Pressable className="bg-amber-500 rounded-full py-4 shadow-lg">
 							<Text className="text-white font-bold text-base text-center tracking-wide">
@@ -65,4 +72,4 @@ const app = () => {
 	)
 }
 
-export default app
+export default AppScreen
