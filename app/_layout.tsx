@@ -42,6 +42,10 @@ export default function RootLayout() {
 					options={{ headerShown: false }}
 				/> */}
 				<Stack.Screen
+					name="(coffee)"
+					options={{ headerShown: false }}
+				/>
+				{/* <Stack.Screen
 					name="index"
 					options={{
 						title: 'Ana Sayfa',
@@ -53,7 +57,7 @@ export default function RootLayout() {
 					options={{
 						title: 'İletişim'
 					}}
-				/>
+				/> */}
 				<Stack.Screen name="+not-found" />
 			</Stack>
 			<StatusBar style="auto" />
