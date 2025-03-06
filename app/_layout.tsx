@@ -37,11 +37,7 @@ export default function RootLayout() {
 			value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}
 		>
 			<Stack>
-				{/* <Stack.Screen
-					name="(tabs)"
-					options={{ headerShown: false }}
-				/> */}
-				{/* <Stack.Screen
+				<Stack.Screen
 					name="index"
 					options={{
 						title: 'Ana Sayfa',
@@ -49,11 +45,27 @@ export default function RootLayout() {
 					}}
 				/>
 				<Stack.Screen
-					name="contact"
+					name="coffee/index"
 					options={{
-						title: 'İletişim'
+						title: 'Kahve',
+						headerShown: false
 					}}
-				/> */}
+				/>
+				<Stack.Screen
+					name="coffee/details/[id]"
+					options={{
+						title: 'Kahve Detayı',
+						headerShown: false
+					}}
+				/>
+				<Stack.Screen
+					name="contact/index"
+					options={{
+						title: 'İletişim',
+						headerShown: false
+					}}
+				/>
+
 				<Stack.Screen name="+not-found" />
 			</Stack>
 			<StatusBar style="auto" />
